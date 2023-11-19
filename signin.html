@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prijavi se</title>
+	<link rel="stylesheet" href="css/signin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+	<nav id="site-navbar">
+		<div class="logo-container">
+			<h2><a href="home.html" class="logo anti-link">Прошетај.ме!</a></h2>
+		</div>
+
+		<div class="nav-links-container">
+			<ul id="nav-list">
+				<li class="nav-link"><a href="home.html" class="anti-link">Početna</a></li>
+				<li class="nav-link"><a href="reviews.html" class="anti-link">Oceni</a></li>
+				<li class="nav-link"><a href="about.html" class="anti-link">O nama</a></li>
+			</ul>
+		</div>
+
+		<div class="account-container">
+			<a href="signin.html" class="anti-link"><button>Moj nalog</button></a>
+		</div>
+	</nav>
+
+
+	<div id="container">
+		<div id="form-container">
+			<p class="form-headline">Prijavi se</p>
+			<hr class="divider"/>
+			<form  id="singIn-form" action="">
+				<label for="username">Korisničko Ime:</label><br>
+					<input type="text" required  autocomplete="off" class="b" id="username" placeholder="Vaše korisničko ime:">
+					<br><br>
+					<label for="password">Lozinka:</label><br>
+					<input type="password" required minlength="8" autocomplete="off" class="b" placeholder="Vaša lozinka:" id="password"><br><br>
+					<label for="save" class="save">Zapamti me</label>
+					<input type="checkbox" id="save">
+					<br><br>
+
+					<p class="signUp-redirect"><a href="signup.html" class="anti-link" >Nemate nalog? Napravite ga odmah!</a></p>
+
+					<button type="submit" class="signInButton">Prijavi se</button>
+			</form>
+		</div>
+
+	</div>
+	
+	<footer id="footer-section">
+		<div class="footer-subsection-1">
+			<h2 id="newsletter">Prijava na newsletter</h2>
+			<input type="email" placeholder="Unesite e-mail adresu" required />
+		</div>
+
+		<div class="footer-subsection-2">
+			<h1 id="footer-section-h1"><a href="home.html">Прошетај.ме!</a></h1>
+			<h4>All rights reserved</h4>
+		</div>
+
+		<div class="footer-subsection-3">
+			<p>Jove Ilića 144, Beograd <br> +381-063-975-6644 <br> office@prosetajme.com</p> <br><br>
+			<h2 id="footer-section-h2"><a href="home.html">Možete nas kontaktirati i putem:</a></h2> <br>
+			<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+			<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+			<a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+			<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+			<a href="https://www.x.com" class="fa fa-twitter"></a>
+		</div>
+
+	</footer>
+
+
+</body>
+</html>

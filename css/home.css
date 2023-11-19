@@ -1,0 +1,205 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+#site-navbar {
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 10vh;
+	background-color: #DEE5E5;
+	border-bottom : 2px solid #0B0033;
+	z-index : 1000;
+}
+
+.logo-container {
+	margin-left: 2%;
+	flex-grow: 3;
+}
+
+.nav-links-container {
+	flex-grow: 0.8;
+	margin-right: 4%;
+}
+
+#nav-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.anti-link {
+	text-decoration: none;
+	color: #0B0033;
+	font-size: 1.15em;
+}
+
+.account-container {
+	flex-grow: 0.3;
+}
+
+.account-container button {
+	width: 120px;
+	height: 6vh;
+	border-radius: 12px;
+	outline : none;
+	cursor : pointer;
+	background-color: #DEE5E5;
+}
+
+.account-container button:hover {
+	background-color: #17B890;
+	border : none;
+	transition: background-color 0.6s ease-out;
+
+}
+
+#container {
+	width: 100vw;
+	height: 80%;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index : 1;
+}
+
+.home_img {
+	width: 100%;
+	height: 90vh;
+	object-fit: cover;
+	opacity: 0.84;
+}
+
+.main-content-container {
+	z-index: 1000;
+	position: absolute;
+	left: 20%;
+	top: 30%;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.nadtekst {
+	font-weight: 750;
+	color : #F5EE9E;
+	/*color : #2D728F;*/
+}
+
+.podtekst {
+	font-size: 68px;
+	font-weight: 900;
+	/*color : #F5EE9E;
+	color: #2D728F;*/
+	color : #0B0033;
+	background-color: #DEE5E5;
+	opacity: 0.9;
+}
+
+.midtekst {
+/*	color : #DEE5E5;*/
+	color : #F5EE9E;
+	font-size : 70px;
+}
+
+.prva_linija {
+	font-size: 72px;
+	color : #F5EE9E;
+}
+
+#postaniClan {
+	width: 20%;
+	height: 10%;
+	background-color: #DEE5E5;
+	color: #0B0033;
+	cursor : pointer;
+	outline : none;
+	border : none;
+	text-align: center;
+	font-size : 24px;
+	border-radius : 12px;
+	padding: 8px;
+}
+
+#postaniClan:hover {
+	transition : all 0.4s ease-out;
+	background-color: #17B890;
+	width: 30%;
+
+}
+
+@media screen and (min-width : 425px) and (max-width: 768px){
+
+
+	.prva_linija{
+		font-size: 52px;
+	}
+	.midtekst{
+		font-size: 42px;
+	}
+	.podtekst{
+		font-size: 44px;
+	}	
+	#postaniClan{
+		font-size: 16px;
+		padding: 2px;
+		width: 40% ;
+	}
+
+	
+	.logo-container >h2 > a{
+		font-size : 0.75em;
+	}
+
+	#nav-list>li {
+		font-size: 0.8em;
+	}
+
+	.main-content-container{
+		top:25%;
+	}
+
+}
+
+
+@media screen and (min-width:375px) and (max-width:425px){
+	.prva_linija{
+		font-size: 36px;
+	}
+	.midtekst{
+		font-size: 26px;
+	}
+	.podtekst{
+		font-size: 30px;
+		font-weight: 700;
+	}	
+	#postaniClan{
+		font-size: 14px;
+		padding: 2px;
+		width: 45% ;
+	}
+
+	.logo-container >h2 > a{
+		font-size : 0.65em;
+	}
+
+	#nav-list>li {
+		font-size: 0.65em;
+	}
+	.account-container button {
+		width: 90px;
+		height: 4vp;
+	}
+}

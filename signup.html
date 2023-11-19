@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Napravi nalog</title>
+	<link rel="stylesheet" href="css/signup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+	<nav id="site-navbar">
+		<div class="logo-container">
+			<h2><a href="home.html" class="logo anti-link">Прошетај.ме!</a></h2>
+		</div>
+
+		<div class="nav-links-container">
+			<ul id="nav-list">
+				<li class="nav-link"><a href="home.html" class="anti-link">Početna</a></li>
+				<li class="nav-link"><a href="reviews.html" class="anti-link">Oceni</a></li>
+				<li class="nav-link"><a href="about.html" class="anti-link">O nama</a></li>
+			</ul>
+		</div>
+
+		<div class="account-container">
+			<a href="signin.html" class="anti-link"><button>Moj nalog</button></a>
+		</div>
+	</nav>
+
+
+	<div id="container">
+		<div id="form-container">
+			<p class="form-headline">Forma za registraciju</p>
+			<hr class="divider"/>
+
+			<form id="registration-form" action="">
+					<label for="name">Ime i prezime:</label><br>
+					<input type="text" class="b" id="name" placeholder="Vaše ime i prezime" required autocomplete="off">
+					<br>
+					<label for="age">Datum rodjenja:</label><br>
+					<input type="date" class="b" required id="age"> <br>
+				
+					<label for="pol">Pol:</label><br>
+					<label for="pol">muški</label>
+					<input type="radio" required id="pol" name="izborPol">
+					<label for="pol">ženski</label>
+					<input type="radio" id="pol" name="izborPol">
+					<br><br>
+					<label for="profileImg">Tvoja Profilna Slika:</label><br>
+					<input type="file" id="profileImg" name="profileImage" required>
+					<br>
+					<label for="phone-number">Kontakt telefon:</label>
+					<br>
+					<input type="text" required autocomplete="off" class="b" id="phone-number" placeholder=" +381 ">
+					<br>
+					<label for="email">Elektronska pošta:</label><br>
+					<input type="email" required autocomplete="off" class="b" id="email" placeholder="Vaša e-mail adresa:">
+					<br>
+					<label for="bio">Nešto više o Vama:</label><br>
+					<textarea id="bio" minlength="30" maxlength="150" required  autocomplete="off" class="b" placeholder=" O meni..." rows="4" cols="35"></textarea><br>
+					<label for="username">Korisničko Ime:
+					</label>
+					<input type="text" required  autocomplete="off" class="b" id="username" placeholder="Vaše korisničko ime:">
+					<label for="password">Lozinka:</label>
+					<input type="password" required minlength="8" autocomplete="off" class="b" placeholder="Vaša lozinka:" id="password">
+					<br><br>
+					<label for="location">Grad Stanovanja : </label>
+					<select name="location" required id="location">
+						<option value="" selected disabled> Izaberite</option>
+						<option value="Beograd">Beograd</option>
+						<option value="Novi Sad">Novi Sad</option>
+						<option value="Subotica">Subotica</option>
+						<option value="Uzice">Užice</option>
+						<option value="Kragujevac">Kragujevac</option>
+						<option value="Niš">Niš</option>
+						<option value="Zaječar">Zaječar</option>
+						<option value="Kraljevo">Kraljevo</option>
+						<option value="Smederevo">Smederevo</option>
+						<option value="Sombor">Sombor</option>
+						<option value="Priština">Priština</option>
+						<option value="Ruma">Ruma</option>
+					</select><br>
+
+					<label for="tos" id="toslabel">Slažem se sa uslovima korišćenja usluge.</label>
+					<input type="checkbox" id="tos" required />
+					<br><br>
+
+					<p class="signInRedirect"><a href="signin.html" class="anti-link">Već imaš nalog?</a></p>
+
+
+					<button type="submit" class="createAccount">Napravi Nalog</button>
+			</form>
+
+
+		</div>
+		
+	</div>
+
+	<footer id="footer-section">
+		<div class="footer-subsection-1">
+			<h2 id="newsletter">Prijava na newsletter</h2>
+			<input type="email" placeholder="Unesite e-mail adresu" required />
+		</div>
+
+		<div class="footer-subsection-2">
+			<h1 id="footer-section-h1"><a href="home.html">Прошетај.ме!</a></h1>
+			<h4>All rights reserved</h4>
+		</div>
+
+		<div class="footer-subsection-3">
+			<p>Jove Ilića 144, Beograd <br> +381-063-975-6644 <br> office@prosetajme.com</p> <br><br>
+			<h2 id="footer-section-h2"><a href="home.html">Možete nas kontaktirati i putem:</a></h2> <br>
+			<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+			<a href="https://www.whatsapp.com" class="fa fa-whatsapp"></a>
+			<a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+			<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+			<a href="https://www.x.com" class="fa fa-twitter"></a>
+		</div>
+
+	</footer>
+
+
+</body>
+</html>
