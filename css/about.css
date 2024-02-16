@@ -31,7 +31,7 @@ body {
 
 .nav-links-container {
 	flex-grow: 0.8;
-	margin-right: 200px;
+	margin-right: 4%;
 }
 
 #nav-list {
@@ -215,4 +215,110 @@ img:hover {
   background: #25D366;
   color: white;
   border-radius: 50%;
+}
+
+@media screen and (min-width : 425px) and (max-width: 768px){
+	.footer-subsection-1>input{
+	width: 80%;
+}
+#newsletter{
+	font-size: 20px;
+	padding: 0;
+}
+#footer-section-h1{
+	font-size: 30px !important;
+}
+#footer-section-h2{
+	font-size: 20px;
+}
+
+	.logo-container >h2 > a{
+		font-size : 1.1em;
+	}
+
+	#nav-list>li {
+		font-size: 0.8em;
+	}
+
+	.introduction>h1{
+		font-size: 30px;
+	}
+	.introduction>p{
+		width: 80%;
+	}
+	img{
+		width: 30%;
+		height: 200px;
+		flex-grow: 0.1;
+		margin: 0;
+	}
+	.gallery{
+		gap: 20px;
+	}
+	body{
+		overflow-x: hidden;
+		height: 2000px;
+	}
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+	.logo-container >h2 > a{
+		font-size : 0.65em;
+	}
+
+	#nav-list>li {
+		font-size: 0.65em;
+	}
+	.account-container button {
+		width: 90px;
+		height: 4vp;
+	}
+	#footer-section{
+		height: 15%;
+	}
+	.footer-subsection-1>input{
+	width: 50%;
+	height: ;
+	margin-left:10px ;
+}
+#newsletter{
+	font-size: 18px;
+	margin-left: 10px;
+}
+#footer-section-h1{
+	font-size: 22px !important;
+}
+#footer-section-h2{
+	font-size: 14px;
+}
+.fa{
+	padding: 8px;
+}
+.footer-subsection-2{
+	display: none  ;
+}
+.footer-subsection-1>input{
+	font-size: 12px !important;
+	width: 70%;
+}
+.footer-subsection-3{
+	margin-left: 35px;
+}
+.introduction>p{
+	font-size: 12px;
+	width: 70%;
+}
+.introduction>h1{
+	font-size: 20px;
+}
+img{
+	width: 35%;
+	height: 150px;
+}
+.gallery{
+	gap:15px;
+}
+body{
+	height: 2000px;
+}
 }

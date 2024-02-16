@@ -31,7 +31,7 @@ body {
 
 .nav-links-container {
 	flex-grow: 0.8;
-	margin-right: 200px;
+	margin-right: 4%;
 }
 
 #nav-list {
@@ -73,7 +73,8 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
-background: linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);	display: flex;
+	background: linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 1) 100%);	
+	display: flex;
 	justify-content: center;
 }
 
@@ -115,6 +116,11 @@ background: linear-gradient(90deg, hsla(40, 63%, 85%, 1) 0%, hsla(22, 94%, 79%, 
 	padding : 4px;
 	text-align: center;
 	font-size : 14px;
+}
+
+#bio {
+	max-width: 50%;
+	max-height: 150px;
 }
 
 #registration-form label, input, textarea, select {
@@ -191,7 +197,7 @@ select {
 }
 
 #footer-section-h1 {
-	font-size : 48px !important;
+	font-size : 48px ;
 }
 
 #footer-section-h1>a, #footer-section-h2>a {
@@ -264,4 +270,93 @@ select {
   background: #25D366;
   color: white;
   border-radius: 50%;
+}
+
+@media screen and (min-width : 425px) and (max-width: 768px){
+
+.footer-subsection-1>input{
+	width: 80%;
+}
+#newsletter{
+	font-size: 20px;
+	padding: 0;
+}
+#footer-section-h1{
+	font-size: 30px !important;
+}
+#footer-section-h2{
+	font-size: 20px;
+}
+
+	.logo-container >h2 > a{
+		font-size : 1.1em;
+	}
+
+	#nav-list>li {
+		font-size: 0.8em;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+.logo-container >h2 > a{
+		font-size : 0.65em;
+	}
+
+	#nav-list>li {
+		font-size: 0.65em;
+	}
+	.account-container button {
+		width: 90px;
+		height: 4vp;
+	}
+	#form-container{
+		width: 80%;
+		height: 90%;
+	}
+	#container {
+		height: 80%;
+	}
+	#footer-section{
+		height: 20%;
+	}
+	.footer-subsection-1>input{
+	width: 50%;
+	height: ;
+}
+#newsletter{
+	font-size: 14px;
+}
+#footer-section-h1{
+	font-size: 22px !important;
+}
+#footer-section-h2{
+	font-size: 14px;
+}
+.fa{
+	padding: 8px;
+}
+#bio{
+	padding: 0;
+	width: 80%;
+}
+#toslabel{
+	font-size: 14px;
+}
+#username{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.footer-subsection-2{
+	display: none  ;
+}
+.footer-subsection-1>input{
+	font-size: 12px !important;
+	width: 70%;
+}
+.footer-subsection-3{
+	margin-left: 35px;
+}
 }

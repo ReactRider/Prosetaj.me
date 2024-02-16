@@ -31,7 +31,7 @@ body {
 
 .nav-links-container {
 	flex-grow: 0.8;
-	margin-right: 200px;
+	margin-right: 4%;
 }
 
 #nav-list {
@@ -74,7 +74,7 @@ body {
 }
 
 .introduction {
-	width: 100vw;
+	width: 100%;
 	height: 15%;
 	display: flex;
 	justify-content: center;
@@ -265,4 +265,142 @@ body {
   background: #25D366;
   color: white;
   border-radius: 50%;
+}
+
+@media screen and (min-width : 425px) and (max-width: 768px){
+	.logo-container >h2 > a{
+		font-size : 1.1em;
+	}
+
+	#nav-list>li {
+		font-size: 0.8em;
+	}
+.footer-subsection-1>input{
+	width: 80%;
+}
+#newsletter{
+	font-size: 20px;
+	padding: 0;
+}
+#footer-section-h1{
+	font-size: 30px !important;
+}
+#footer-section-h2{
+	font-size: 20px;
+}
+.introduction>input::placeholder{
+	font-size:10px;
+}
+.review{
+	height: 10%;
+}
+.rev-text{
+	padding: 6px;
+	width: 40%;
+	overflow: auto;
+}
+.review-stars {
+		margin-top: 20%;
+		object-fit: fill;
+		height: 18%;
+		width: 28%;
+	}
+}
+
+@media screen and (min-width:375px) and (max-width:425px){
+		.logo-container >h2 > a{
+		font-size : 0.65em;
+	}
+
+	#nav-list>li {
+		font-size: 0.65em;
+	}
+	.account-container button {
+		width: 90px;
+		height: 4vp;
+	}
+	#footer-section{
+		height: 12%;
+	}
+
+	.footer-subsection-1>input{
+	width: 50%;
+	height: ;
+	margin-left:10px ;
+}
+#newsletter{
+	font-size: 18px;
+	margin-left: 10px;
+}
+#footer-section-h1{
+	font-size: 22px !important;
+}
+#footer-section-h2{
+	font-size: 14px;
+}
+.fa{
+	padding: 8px;
+}
+.footer-subsection-2{
+	display: none  ;
+}
+.footer-subsection-1>input{
+	font-size: 12px !important;
+	width: 70%;
+}
+.footer-subsection-3{
+	margin-left: 35px;
+}
+.introduction>h1{
+	font-size: 25px;
+}
+.introduction>p{
+	font-size: 16px;
+}
+.introduction{
+	height: 12%;
+
+}
+
+#searchReviews {
+	font-size: 14px;
+	width: 75%;
+	padding: 5px;
+}
+
+body{
+height: 2500px;
+}
+.rev-text{
+	width: 80%;
+	padding: 4px;
+	overflow: auto;
+	font-size: 10px;
+}
+.review-gallery{
+	justify-content: center;
+	margin: 10% 0 0 0;
+}
+
+.review {
+	width: 70%;
+}
+
+.rev-pic{
+	width: 40%;
+}
+.review-stars {
+		transform: rotate(90deg);
+		margin-top: 20% ;
+		object-fit: fill;
+		height: 30px;
+		width: 60px;
+		padding: 0;
+		align-items: center;
+	}
+
+	#container {
+		overflow: scroll;
+	}
+
 }

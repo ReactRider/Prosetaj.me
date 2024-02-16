@@ -31,7 +31,7 @@ body {
 
 .nav-links-container {
 	flex-grow: 0.8;
-	margin-right: 200px;
+	margin-right: 4%;
 }
 
 #nav-list {
@@ -162,7 +162,7 @@ input {
 }
 
 #footer-section-h1 {
-	font-size : 48px !important;
+	font-size : 48px;
 }
 
 #footer-section-h1>a, #footer-section-h2>a {
@@ -239,11 +239,72 @@ input {
 
 @media screen and (min-width : 425px) and (max-width: 768px){
 
-
+.b{
+	padding: 0;
+}
+.save{
+	margin-right: 8px;
+}
+.anti-link{
+	font-size: 1.1em;
+}
+.form-headline{
+	font-size: 1.5em;
+}
+#form-container{
+	width: 40%;
+	height: 60%;
+}
+.footer-subsection-1>input{
+	width: 80%;
+}
+#newsletter{
+	font-size: 20px;
+}
+#footer-section-h1{
+	font-size: 30px !important;
+}
+#footer-section-h2{
+	font-size: 20px;
+}
 }
 
 @media screen and (min-width:375px) and (max-width:425px){
 
-	
+	.logo-container >h2 > a{
+		font-size : 0.65em;
+	}
+
+	#nav-list>li {
+		font-size: 0.65em;
+	}
+	.account-container button {
+		width: 90px;
+		height: 4vp;
+	}
+	#form-container{
+		width: 60%;
+		height: 60%;
+	}
+
+
+.footer-subsection-1>input{
+	width: 70%;
+	font-size: 12px;
+}
+#newsletter{
+	font-size: 16px;
+}
+#footer-section-h1{
+	font-size: 22px !important;
+}
+#footer-section-h2{
+	font-size: 14px;
+}
+
+.footer-subsection-2{
+	display: none  ;
+}
+
 }
 
